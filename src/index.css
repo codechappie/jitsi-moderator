@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,36 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+#myFrame #jitsi-moderated-meetings header{
+  display: none!important;
+}
+
+.jitsi-page{
+  background: red;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.jitsi-container{
+  /* border: 3px solid #333; */
+  /* overflow: hidden; */
+}
+.jitsi-container iframe{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: -5px;
+}
+
+.type > div{
+  border: 2px solid #fff;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
